@@ -1,0 +1,10 @@
+{
+	"name": "Python 3",
+	"image": "mcr.microsoft.com/devcontainers/python:3"
+
+	// "features": {},
+	// "forwardPorts": [],
+	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	// "customizations": {},
+	// "remoteUser": "root"
+}
