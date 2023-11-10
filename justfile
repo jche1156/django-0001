@@ -17,9 +17,8 @@ install_dev:
 watch:
     pytest -f
 
-
 code:
-    code README.md src/main.py tests/test_django.py justfile
+    code README.md justfile
 
 dev:
     python3 src/manage.py runserver
