@@ -10,4 +10,4 @@ run:
     python src/main.py
 
 install_dev:
-    pip install -r requirements-dev.txt
+    pip install -r .devcontainer/requirements-dev.txt
