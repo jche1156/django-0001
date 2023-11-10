@@ -26,3 +26,6 @@ superlint:
     pylint --disable=E0401 tests
     flake8 src
     flake8 tests
+
+migrate:
+    python src/manage.py migrate
