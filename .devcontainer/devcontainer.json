@@ -11,22 +11,4 @@
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
 	// "customizations": {},
 	// "remoteUser": "root"
-	
-	"customizations": {	
-		"vscode": {
-			"settings": {
-				"editor.tabSize": 4,
-				"terminal.integrated.defaultProfile.linux": "zsh",
-				"terminal.integrated.profiles.linux": {
-					"bash": {
-						"path": "bash",
-						"icon": "terminal-bash"
-					},
-					"zsh": {
-						"path": "zsh"
-					}
-				}
-			}
-		}
-	}
 }
