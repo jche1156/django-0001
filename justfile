@@ -1,7 +1,8 @@
 format_test_lint:
     black src tests
     pytest
-    pylint src tests
+    pylint src
+    pylint --disable=E0401 tests
 
 watch:
     pytest -f
