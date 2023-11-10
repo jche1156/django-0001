@@ -1,16 +1,13 @@
-flt:
+format_test_lint:
     black src tests
+    pytest
     pylint src tests
-    pytest
-
-format:
-    black src tests
-
-lint:
-    pylint src
-
-test:
-    pytest
 
 watch:
     pytest -f
+
+run:
+    python src/main.py
+
+install_dev:
+    pip install -r requirements-dev.txt
