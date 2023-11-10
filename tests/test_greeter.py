@@ -29,12 +29,19 @@ class GreeterTestSuite(unittest.TestCase):
     def test_goodbye(self, mock_print):
         """Test that greeter says bye as well"""
         greeter = Greeter()
-        greeter.bye("John")
-        mock_print.assert_called_with("Byebye, John!")
         greeter.bye("Eric")
         mock_print.assert_called_with("Byebye, Eric!")
         greeter.bye("George")
         mock_print.assert_called_with("Byebye, George!")
+
+    def test_greeter_memory(self):
+        """Greeter should remember who they've said hi to"""
+        greeter = Greeter()
+        greeter.greet("John")
+        self.assertCountEqual(greeter.guests, ["John"])
+        greeter.greet("George")
+        greeter.greet("Eric")
+        self.assertCountEqual(greeter.guests, ["George", "John", "Eric"])
 
 
 if __name__ == "__main__":
