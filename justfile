@@ -1,12 +1,7 @@
 format_test_lint:
     black src tests
     pytest
-    pylint src
-    pylint --disable=E0401 tests
-
-lint:
-    pylint src
-    pylint --disable=E0401 tests
+    ruff check --fix .
 
 install:
     pip install -r requirements.txt
@@ -23,3 +18,11 @@ code:
 dev:
     python3 src/manage.py runserver
 
+lint:
+    ruff check .
+
+superlint:
+    pylint src
+    pylint --disable=E0401 tests
+    flake8 src
+    flake8 tests

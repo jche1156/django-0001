@@ -1,4 +1,4 @@
-"""Django Unit Tests (WIP)"""
+"""Bare-bones Django-based test"""
 from unittest import skip
 from unittest.mock import patch
 
