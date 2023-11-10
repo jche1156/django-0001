@@ -18,11 +18,15 @@ just install
 just code
 just watch
 
-[write some code, time to format/test...]
+[write some code, time to format/test]
 
 just
 
-[before committing...]
+[to start a dev server]
+
+just dev
+
+[before committing]
 
 just superlint
 ```
